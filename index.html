@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Simplur Event</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="stylesheets/main.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic" rel="stylesheet" type="text/css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script>
+    $(function() {
+
+        var $allVideos = $("iframe[src^='http://player.vimeo.com'], iframe[src^='http://www.youtube.com'], object, embed"),
+            $fluidEl = $("figure");
+
+        $allVideos.each(function() {
+
+            $(this)
+                // jQuery .data does not work on object/embed elements
+                .attr('data-aspectRatio', this.height / this.width)
+                .removeAttr('height')
+                .removeAttr('width');
+
+        });
+
+        $(window).resize(function() {
+
+            var newWidth = $fluidEl.width();
+            $allVideos.each(function() {
+
+                var $el = $(this);
+                $el
+                    .width(newWidth)
+                    .height(newWidth * $el.attr('data-aspectRatio'));
+
+            });
+
+        }).resize();
+
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
+        $("button").click(function() {
+            $(".insert").remove();
+            $(".form-insert").load("event-form-signup.html");
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <header class="container">
+        <div class="row">
+            <div class="four columns">
+                <section id="logo">
+                    <img src="images/logo.png">
+                </section>
+            </div>
+            <div class="eight columns">
+                <section id="slogan">
+                    Preserving Forests One Tree At A Time
+                </section>
+            </div>
+        </div>
+    </header>
+    <section id="main-content">
+        <!--I'm using the containers to keep the content within a max-width of 1000px, but that's their only use-->
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <h1>Save The Forest Day</h1>
+                    <h2>Join us as we replant trees in Sequoia Forest</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="eight columns">
+                    <div class="video-container">
+                        <figure>
+                            <iframe frameborder="0" height="480" src="https://www.youtube.com/embed/f3-bnlJ7rT4" width="853"></iframe>
+                        </figure>
+                    </div>
+                </div>
+                <div class="four columns event-info">
+                    <div class="form-insert"></div>
+                    <div class="insert">
+                        <h3>Event Details</h3>
+                        <p id="date"><span class="fa fa-calendar"></span> Thursday, May 16, 2015</p>
+                        <p id="price"><span class="fa fa-tag"></span> $20 Member/$25 Non-member</p>
+                        <p id="time"><span class="fa fa-clock-o"></span> 6am - 6pm</p>
+                        <p id="location"><span class="fa fa-compass"></span> 2201 Sequoia Park Drive,
+                            <br> City, State, 80000</p>
+                        <button class="button-primary">Join Event!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- This is the about the event section -->
+    <section id="about-event">
+        <div class="container">
+            <h3>About The Event</h3>
+            <div class="dash"></div>
+            <div class="row">
+                <div class="seven columns">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="five columns stats">
+                    <div id="stat1">
+                        <p class="stat-number">500</p>
+                        <p class="stat-label">Trees Saved</p>
+                    </div>
+                    <div id="stat2">
+                        <p class="stat-number">1,000</p>
+                        <p class="stat-label">Volunteers Mobilized</p>
+                    </div>
+                    <div id="stat3">
+                        <p class="stat-number">20</p>
+                        <p class="stat-label">Forests Protected</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- This is the about nonprofit section -->
+    <section id="about">
+        <div class="container">
+            <h3>About Us</h3>
+            <div class="dash"></div>
+            <div class="row">
+                <div class="seven columns">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+                <div class="five columns"><img src="images/volunteers1.jpg"></div>
+            </div>
+        </div>
+    </section>
+    <!-- This is the testimonials section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="two columns"><img src="images/testimonialLeft1.png"></div>
+                <div class="four columns">
+                    <p>“Here is a testimonial about how great this nonprofit is and why you should be a part of alll that they are doing. They really are saving the nations forests and I’m happy to be a part of it.”</p>
+                    <p>- Random Person</p>
+                </div>
+                <div class="two columns"><img src="images/testimonialRight1.png"></div>
+                <div class="four columns">
+                    <p>“Here is a testimonial about how great this nonprofit is and why you should be a part of alll that they are doing. They really are saving the nations forests and I’m happy to be a part of it.”</p>
+                    <p>- Random Person</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <p>©2015 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
