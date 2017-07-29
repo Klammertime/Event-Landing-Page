@@ -23,3 +23,5 @@ The form does not take data but it loads the form after clicking Join Event butt
 * [Separating Content: 10 Ways to Draw the Line](https://designshack.net/articles/graphics/separating-content-10-ways-to-draw-the-line/)
 * [Centered Heading Overlaying a Horizontal Line with CSS](https://www.impressivewebs.com/centered-heading-horizontal-line/)
 * [The Basics of Composition](http://www.designingfortheweb.co.uk/part5/part5_chapter21.php)
+* [Use titling figures with full caps, and text figures in all other circumstances](http://webtypography.net/3.2.1)
+* [13 Best Responsive CSS Grid Systems for Your Web Designs](https://www.webpagefx.com/blog/web-design/responsive-css-grid/)
