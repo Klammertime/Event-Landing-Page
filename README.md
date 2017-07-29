@@ -2,7 +2,8 @@
 
 The form does not take data but it loads the form after clicking Join Event button.
 
-**Landing Page Design Resources Used**
+## Resources Used
+
 **Design Theory Resources Used**
 * [The Basics of Composition](http://www.designingfortheweb.co.uk/part5/part5_chapter21.php)
 * [The Elements of Typographic Style Applied to the Web](http://webtypography.net/toc/)
