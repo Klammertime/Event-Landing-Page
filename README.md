@@ -30,7 +30,7 @@ The form does not take data but it loads the form after clicking Join Event butt
 * [Fluid Width Video](https://css-tricks.com/NetMag/FluidWidthVideo/demo.php)
 * [Centered Heading Overlaying a Horizontal Line with CSS](https://www.impressivewebs.com/centered-heading-horizontal-line/)
 * [Designing a Single Page Product Website in Photoshop and HTML](https://www.pluralsight.com/courses/designing-single-page-product-website-photoshop-html-1812)
-* [https://www.youtube.com/watch?v=pIxFlt4BvCU](Squeeze Page Design Tutorial in Photoshop (Part 1))
+* [Squeeze Page Design Tutorial in Photoshop - Part 1](https://www.youtube.com/watch?v=pIxFlt4BvCU)
 * [Part 4 - iPhone Breathalyzer - Website Design in Photoshop CC](https://www.youtube.com/watch?v=9ZbQo7pMvw0)
 
 **Grid Systems**
