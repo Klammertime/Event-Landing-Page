@@ -4,7 +4,7 @@ The form does not take data but it loads the form after clicking Join Event butt
 
 ## Resources Used
 
-**Design Theory Resources Used**
+**Design Theory**
 * [The Basics of Composition](http://www.designingfortheweb.co.uk/part5/part5_chapter21.php)
 * [The Elements of Typographic Style Applied to the Web](http://webtypography.net/toc/)
 * [Use titling figures with full caps, and text figures in all other circumstances](http://webtypography.net/3.2.1)
@@ -29,7 +29,7 @@ The form does not take data but it loads the form after clicking Join Event butt
 * [Fluid Width Video](https://css-tricks.com/NetMag/FluidWidthVideo/demo.php)
 * [Centered Heading Overlaying a Horizontal Line with CSS](https://www.impressivewebs.com/centered-heading-horizontal-line/)
 
-**Grid System Resources**
+**Grid Systems**
 * [13 Best Responsive CSS Grid Systems for Your Web Designs](https://www.webpagefx.com/blog/web-design/responsive-css-grid/)
 * [Skeleton Boilerplate](http://getskeleton.com/)
 * [Using Grids in Web Design](https://webdesign.tutsplus.com/courses/using-grids-in-web-design)
