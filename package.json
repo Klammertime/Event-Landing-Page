@@ -1,14 +1,12 @@
 {
-  "name": "event landing page",
-  "version": "1.0.0",
+  "name": "event-landing-page",
+  "version": "1.0.2",
   "description": "event landing page",
-  "main": "index.js",
-  "dependencies": {
-    "firebase": "^2.4.2"
-  },
+  "main": "gulpfile.js",
+  "dependencies": {},
   "devDependencies": {
     "del": "^2.2.0",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-gh-pages": "^0.5.4"
   },
   "scripts": {
@@ -16,14 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Klammertime/Event-Landing-Page"
+    "url": "git+https://github.com/Klammertime/Event-Landing-Page.git"
   },
   "author": "",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Klammertime/Event-Landing-Page/issues"
   },
   "homepage": "https://github.com/Klammertime/Event-Landing-Page#readme"
 }
-
-
