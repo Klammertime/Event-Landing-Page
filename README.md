@@ -1,5 +1,7 @@
 # Event Landing Page
 
+View here: [http://klammertime.github.io/Event-Landing-Page/](http://klammertime.github.io/Event-Landing-Page/)
+ 
 The form does not take data but it loads the form after clicking Join Event button.
 
 ## Resources Used
