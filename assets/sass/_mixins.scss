@@ -1,0 +1,25 @@
+
+@mixin dash-base {
+  width: 85px;
+  height: 1px;
+  background: $green;
+}
+
+@mixin input-select {
+  box-sizing: border-box;
+  height: 38px;
+  padding: 6px 10px;
+  border: 1px solid $light-grey2;
+  @include border-radius(4px);
+  background-color: $white;
+  box-shadow: none;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+// this is how you used it .box { @include border-radius(10px); }
